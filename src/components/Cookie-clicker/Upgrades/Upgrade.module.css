@@ -1,0 +1,70 @@
+.container {
+  position: absolute;
+
+  padding: 5px;
+  width: 220px;
+  height: 200px;
+  box-sizing: border-box;
+
+  background-color: rgba(15, 15, 15, 0.9);
+  border: 2px solid rgb(245, 143, 9);
+  border-radius: 12px;
+}
+
+.description {
+  font-size: 10px;
+}
+
+.upgradeRow {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.description::before,
+.description::after {
+  content: "";
+  display: block;
+  width: 95%;
+  height: 1px;
+  border: 1px solid rgb(72, 72, 72);
+  border-radius: 12px;
+}
+
+.description::after {
+  margin-bottom: 5px;
+}
+
+.upgrade {
+  font-size: 10px;
+  background-color: rgb(119, 117, 117);
+  color: rgb(245, 242, 242);
+  border-radius: 3px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price {
+  margin-left: auto;
+  color: gold;
+  font-size: 12px;
+}
+
+.stats {
+  background-color: rgb(51, 51, 51);
+  border-radius: 6px;
+  width: 95%;
+  height: 16px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.statText {
+  font-size: 8px;
+  color: white;
+}

@@ -1,0 +1,251 @@
+body {
+  place-content: center;
+  margin: 0;
+  display: grid;
+  min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  opacity: 0.4;
+  background: url("CookieAssets/CCBackground.png") center / 100% auto fixed
+    no-repeat;
+  box-sizing: border-box;
+  inset: 0;
+}
+
+.title {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 1540px;
+  height: 100px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.title h2 {
+  font-size: 48px;
+}
+
+.cookiecontainer {
+  display: grid;
+  width: 97%;
+  height: 636px;
+
+  margin-left: 4px;
+  max-width: 100%;
+  grid-template-columns: 500px 620px 360px;
+  position: relative;
+
+  overflow: hidden;
+
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+
+  border-image: url(CookieAssets/Wood/WoodP-V.png) 30 repeat;
+}
+
+.cookie {
+  width: 240px;
+  aspect-ratio: 1 / 1;
+  padding-bottom: 50px;
+  margin-left: 29%;
+  position: relative;
+  z-index: 1;
+}
+
+.bakery {
+  width: 300px;
+  padding: 5px;
+  border-radius: 30px;
+
+  font-size: 32px;
+
+  margin-left: 37%;
+  border: none;
+  text-align: center;
+  background-color: transparent;
+
+  color: white;
+  margin-bottom: 2%;
+  text-shadow: 0 0 6px #ffffff;
+}
+
+.CCcontainer {
+  width: 240px;
+  padding: 20px;
+  border-radius: 50%;
+  margin-left: 30%;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CCcontainer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.cookieclicker {
+  grid-column: 1;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* COOOKIE STYLING */
+.cookie {
+  width: 300px;
+  aspect-ratio: 1 / 1;
+  padding-bottom: 100px;
+}
+
+.cookie:hover {
+  cursor: pointer;
+}
+
+.cookie:active {
+  scale: 0.95 !important;
+}
+
+.counter {
+  font-size: 38px;
+  gap: 10px;
+  padding-left: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.counterps {
+  padding-left: 12px;
+  font-size: 16px;
+}
+.cookiepersecond {
+  margin: 0;
+  margin-bottom: 1rem;
+
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  width: 500px;
+  overflow: hidden;
+
+  padding: 10px;
+
+  font-size: 24px;
+}
+
+/*---- MILKY WAVE & ANIMATION FOR IT ---*/
+.wave {
+  position: absolute;
+  bottom: -50px;
+
+  z-index: 1;
+
+  width: 540px;
+  height: 320px; /* increased from 200px */
+
+  background-image: url("CookieAssets/LightWave/Wave.png");
+  background-repeat: repeat-x;
+  background-size: 1500px 350px; /* increase this too */
+
+  animation: wave 12s linear infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes wave {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -900px;
+  }
+}
+/*----RADIANT BURST / GLOOW EFFECT ---*/
+
+.Radiant {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Radiant::before {
+  content: "";
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: 1000px;
+  height: 450px;
+
+  background-image: url("./CookieAssets/LightWave/RBurst.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  animation: radiantBurst 12s linear infinite;
+  pointer-events: none;
+
+  z-index: 0;
+}
+
+@keyframes radiantBurst {
+  0% {
+    rotatez: (0deg);
+    transform: translate(-46%, -60%) rotateZ(0deg);
+  }
+
+  50% {
+    transform: translate(-46%, -60%) rotateZ(180deg);
+  }
+
+  100% {
+    transform: translate(-46%, -60%) rotateZ(360deg);
+  }
+}
+
+.clicked {
+  position: absolute;
+  z-index: 99;
+  font-size: 24px;
+  color: white;
+  display: none;
+}
+
+.clicked:active {
+  animation: rising 2s;
+  display: flex;
+}
+
+@keyframes rising {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-100px);
+  }
+}
+
+.cookieFalling {
+  animation: fallingCookie 1s linear infinite;
+  width: 40px;
+
+  filter: brightness(0.2);
+}
+
+@keyframes fallingCookie {
+  0% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

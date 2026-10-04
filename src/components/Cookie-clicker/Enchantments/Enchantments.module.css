@@ -1,0 +1,54 @@
+.border {
+  border: 3px solid rgb(245, 165, 5);
+  background-color: rgb(81, 46, 7);
+  border-radius: 12px;
+  width: 58px;
+  height: 42px;
+  cursor: pointer;
+}
+
+.border:hover {
+  background-color: rgb(156, 88, 20);
+}
+
+.description {
+  background-color: rgba(12, 12, 12, 0.8);
+  border-radius: 12px;
+  border: rgb(228, 194, 0) 2px solid;
+
+  top: 50px;
+  right: 380px;
+  position: absolute;
+  width: fit-content;
+  color: white;
+  z-index: 2;
+  height: fit-content;
+
+  place-items: center;
+}
+
+.upgradeRow {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.upgradeRow img {
+  width: 40px;
+}
+
+.upgrade {
+  font-size: 10px;
+  background-color: rgb(160, 156, 156);
+  padding: 0px 1px;
+  border-radius: 3px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price {
+  margin-left: auto;
+  color: gold;
+}

@@ -1,0 +1,59 @@
+.farms {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  border-image: url(../CookieAssets/Wood/WoodP-V.png) 30 repeat;
+}
+
+/*
+flex-grow:   0  , don't grow
+flex-shrink: 0  ,  don't shrink
+flex-basis:  160px , use 160px as the fixed size*/
+
+.settings {
+  flex: 0 0 160px;
+  height: 160px;
+  min-height: 160px;
+  max-height: 160px;
+  box-sizing: border-box;
+
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-image: url(../CookieAssets/Wood/WoodP-H.png) 30 repeat;
+
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.farmBorder {
+  flex: 1;
+  min-height: 0;
+  margin-top: 3%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-top: 20px solid transparent;
+
+  border-image: url(../CookieAssets/Wood/WoodP-H.png) 30 repeat;
+}
+
+.Buttons {
+  padding: 7px;
+  border-radius: 12%;
+  margin-top: 2%;
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  border: solid #020202 2px;
+
+  background: url(../CookieAssets/Wood/WoodBack.png);
+}
+
+.Buttons:hover {
+  scale: 1.05;
+  text-shadow: 0 0 10px #ffff;
+}

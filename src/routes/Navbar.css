@@ -1,0 +1,25 @@
+/*----- KEEPS SCROLLBAR HIDDEN--- */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+/* ----- CENTERED NAV BAR-----*/
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  width: 100%;
+  margin-left: 50px;
+  padding: 10px 0 12px;
+  box-sizing: border-box;
+}
+
+.nav-link {
+  text-decoration: none;
+  background-color: #0f0633;
+  padding: 5px;
+  border-radius: 8px;
+}
