@@ -113,7 +113,7 @@ export function Upgrade({
               <p className={styles.upgrade}>Owned: {units}</p>
             </div>
 
-            <p className={styles.price}>${price}🍪</p>
+            <p className={styles.price}>{price}🍪</p>
           </div>
 
           <p className={styles.description}>{description}</p>
