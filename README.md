@@ -14,4 +14,4 @@ I do not claim ownership of any third-party assets included in this project.
 
 This project is not affiliated with, endorsed by, or sponsored by the original Cookie Clicker developers.
 
-This project is intended for educational and non-commercial purposes.
+Was just made for fun.
