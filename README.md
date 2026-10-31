@@ -1,6 +1,6 @@
-Cookie clicker school project made with JS React
+# Cookie clicker school project made with JS React
 
-Disclaimer & Copyright Notice
+## Disclaimer & Copyright Notice
 
 This project is an unofficial, fan-made recreation inspired by Cookie Clicker.
 
